@@ -1,3 +1,6 @@
-org/uv/tpcsw/practica03/TPCSWPractica03.class
+org/uv/tpcsw/practica03/IDAOGeneral.class
 org/uv/tpcsw/practica03/HibernateUtil.class
+org/uv/tpcsw/practica03/DAOEmpleado.class
+org/uv/tpcsw/practica03/TPCSWPractica03.class
 org/uv/tpcsw/practica03/Empleado.class
+org/uv/tpcsw/practica03/Departamento.class
