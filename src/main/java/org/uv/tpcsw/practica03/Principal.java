@@ -97,9 +97,9 @@ public class Principal extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void mnuDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuDepartamentoActionPerformed
+    private void mnuDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {
 
         Departamentos dep = new Departamentos();
         dep.setVisible(true);
