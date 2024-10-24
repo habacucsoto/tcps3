@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -26,8 +27,9 @@ public class Empleado implements Serializable {
     private String direccion;
     @Column
     private String telefono;
-    @Column
-    @ManyToOne()
+    
+    @ManyToOne
+    @JoinColumn(name = "depto_clave")
     private Departamento depto;
 
     public long getClave() {

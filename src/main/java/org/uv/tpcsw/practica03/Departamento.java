@@ -4,11 +4,13 @@ package org.uv.tpcsw.practica03;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.Id;        
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -17,14 +19,23 @@ import javax.persistence.Table;
 @Table(name = "departamentos")
 public class Departamento implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "departamentos _clave_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "departamentos_clave_seq")
     @SequenceGenerator(name = "departamentos_clave_seq", sequenceName = "departamentos_clave_seq", initialValue = 1, allocationSize = 1)
     @Column(name  = "clave")
     private long clave;
     private String nombre;
 
-    @OneToMany
-    private List<Empleado> listEmpleado = new ArrayList<>();
+    @OneToMany(mappedBy = "depto",fetch = FetchType.LAZY)
+    private Set<Empleado> empleados;
+    
+     public Set<Empleado> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(Set<Empleado> empleados) {
+        this.empleados = empleados;
+    }
+    
     
     public long getClave() {
         return clave;
@@ -42,12 +53,12 @@ public class Departamento implements Serializable {
         this.nombre = nombre;
     }
 
-    public List<Empleado> getListEmpleado() {
-        return listEmpleado;
-    }
-
-    public void setListEmpleado(List<Empleado> listEmpleado) {
-        this.listEmpleado = listEmpleado;
-    }
-        
+//    public List<Empleado> getListEmpleado() {
+//        return listEmpleado;
+//    }
+//
+//    public void setListEmpleado(List<Empleado> listEmpleado) {
+//        this.listEmpleado = listEmpleado;
+//    }
+//        
 }

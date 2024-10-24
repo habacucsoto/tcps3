@@ -1,6 +1,9 @@
-/home/habacuc/projects/tpcs/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Empleado.java
-/home/habacuc/projects/tpcs/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/DAOEmpleado.java
-/home/habacuc/projects/tpcs/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/IDAOGeneral.java
-/home/habacuc/projects/tpcs/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/TPCSWPractica03.java
-/home/habacuc/projects/tpcs/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Departamento.java
-/home/habacuc/projects/tpcs/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/HibernateUtil.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Departamento.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/TPCSWPractica03.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/IDAOGeneral.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/HibernateUtil.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Empleado.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Principal.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Empleados.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/Departamentos.java
+/home/tony/NetBeansProjects/TPCSW_Practica03/src/main/java/org/uv/tpcsw/practica03/DAOEmpleado.java
